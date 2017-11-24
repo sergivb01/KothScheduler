@@ -14,6 +14,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+/*
+ *  KothScheduler Plugin - Developed by sergivb01
+ *  Licensed under MIT License (https://github.com/sergivb01/KothScheduler/blob/master/LICENSE.md)
+ *
+ *  Twitter: twitter.com/sergivb01
+ *  Contact: hi@sergivb01.me
+ */
+
 public class KothScheduler extends JavaPlugin{
     @Getter private static KothScheduler instance;
     @Getter private List<String> koths = new ArrayList<>();
@@ -67,5 +75,23 @@ public class KothScheduler extends JavaPlugin{
         return koths.get(0);
     }
 
+
+    /*
+     *  In case you want to automatically register Koth games
+     *  you may use this method. Do not forget to import the required
+     *  packages and add your HCF plugin as a library.
+     */
+
+    /*private void registerFromFactions(){
+        koths.clear();
+        for(Faction faction  : getFactionManager().getFactions()){
+            if(faction instanceof EventFaction){
+                if(faction instanceof KothFaction) {
+                    koths.add(faction.getName());
+                    this.getLogger().info("Registered " + faction.getName() + " in eventGames list.");
+                }
+            }
+        }
+    }*/
 
 }
