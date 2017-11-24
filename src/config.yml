@@ -1,0 +1,7 @@
+start-koth-message: "&9Koth %KOTH_NAME% has started!"
+start-koth-command: "msg Move2Linux %KOTH_NAME%"
+koth-list:
+  - "test"
+  - "test2"
+  - "test3"
+  - "test4"

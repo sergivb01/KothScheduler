@@ -1,0 +1,7 @@
+name: KothScheduler
+version: 1.0
+main: me.sergivb01.kothscheduler.KothScheduler
+author: sergivb01
+commands:
+  kothscheduler:
+    description: Main command of plugin.
