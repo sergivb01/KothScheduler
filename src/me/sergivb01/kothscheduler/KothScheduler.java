@@ -75,6 +75,10 @@ public class KothScheduler extends JavaPlugin{
         return koths.get(0);
     }
 
+    public void shuffleGames(){
+        Collections.shuffle(koths);
+    }
+
 
     /*
      *  In case you want to automatically register Koth games

@@ -35,6 +35,14 @@ public class KothSchedulerCommand implements CommandExecutor{
                 }
                 sender.sendMessage(ChatColor.YELLOW + "Next Koth: " + ChatColor.GREEN + plugin.getNextGame());
                 break;
+            case "shuffle":
+                if(!existsKoth()){
+                    sender.sendMessage(ChatColor.RED + "There are no koths.");
+                    return false;
+                }
+                plugin.shuffleGames();
+                sender.sendMessage(ChatColor.YELLOW + "Koth list has been shuffled.");
+                break;
             case "rotate":
                 if(!existsKoth()){
                     sender.sendMessage(ChatColor.RED + "There are no koths.");
